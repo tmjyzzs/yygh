@@ -70,6 +70,7 @@ public class DictController {
 
     @GetMapping("getName/{value}")
     public String getName(@PathVariable String value) {
+        System.out.println("测试git");
         String dictName = dicService.getDictName("",value);
         return dictName;
     }
